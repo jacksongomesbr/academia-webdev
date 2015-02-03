@@ -27,15 +27,16 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia - WebDev" type="application/atom+xml">
-  <meta name="description">
+  <meta name="description" content="CSS (Cascading Style Sheets) é a linguagem utilizada para formatação de conteúdo na internet. Enquanto o HTML define o conteúdo, em si, CSS é utilizado para estilizar ou apresentar o conteúdo. Desta f">
 <meta property="og:type" content="website">
 <meta property="og:title" content="CSS">
 <meta property="og:url" content="http://jacksongomesbr.github.com/academia-webdev/academia-webdev/docs/css.html">
 <meta property="og:site_name" content="Academia - WebDev">
-<meta property="og:description">
+<meta property="og:description" content="CSS (Cascading Style Sheets) é a linguagem utilizada para formatação de conteúdo na internet. Enquanto o HTML define o conteúdo, em si, CSS é utilizado para estilizar ou apresentar o conteúdo. Desta f">
+<meta property="og:image" content="http://www.w3schools.com/css/selector.gif">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS">
-<meta name="twitter:description">
+<meta name="twitter:description" content="CSS (Cascading Style Sheets) é a linguagem utilizada para formatação de conteúdo na internet. Enquanto o HTML define o conteúdo, em si, CSS é utilizado para estilizar ou apresentar o conteúdo. Desta f">
 <meta name="twitter:site" content="@jacksongomesbr">
 <meta property="fb:admins" content="100000247608790">
 
@@ -88,13 +89,32 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Conteúdo</strong>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Sintaxe"><span class="toc-number">1.</span> <span class="toc-text">Sintaxe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Seletores"><span class="toc-number">1.1.</span> <span class="toc-text">Seletores</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bloco_de_declaração"><span class="toc-number">1.2.</span> <span class="toc-text">Bloco de declaração</span></a></li></ol></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        
+        <p><a href="http://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="external"><strong>CSS (Cascading Style Sheets)</strong></a> é a linguagem utilizada para formatação de conteúdo na internet. Enquanto o HTML define o conteúdo, em si, CSS é utilizado para estilizar ou apresentar o conteúdo. Desta forma, o objetivo de um documento CSS é definir regras de formatação para um conteúdo.</p>
+<h2 id="Sintaxe">Sintaxe</h2>
+<p>Uma regra CSS consiste de um <strong>seletor</strong> e de um <strong>bloco de declaração</strong>:</p>
+<p><img src="http://www.w3schools.com/css/selector.gif" alt=""></p>
+<h3 id="Seletores">Seletores</h3>
+<p>O seletor, como o nome indica, permite selecionar o elemento ou o conjunto de elementos do HTML que serão afetados pelas regras de formatação presentes no bloco de declaração. O seletor pode ser:</p>
+<ul>
+<li><strong>seletor de elemento</strong>: exemplo: <code>h1 { ... }</code> aplica-se ao elemento <code>h1</code></li>
+<li><strong>seletor de id</strong>: exemplo: <code>#pagina { ... }</code> aplica-se ao elemento com id <code>pagina</code></li>
+<li><strong>seletor de classe</strong>: exemplo: <code>.paragrafo { ... }</code> aplica-se a todos os elementos que tiverem a classe <code>paragrafo</code></li>
+</ul>
+<p>Independentemente do seletor, ele também pode ser combinado, aplicando a regra a vários elementos. Para isso, basta separar os seletores por vírgula. Exemplo: <code>h1, .paragrafo, #pagina { ... }</code> aplica-se ao elemento <code>h1</code>, a todos os elementos que tiverem a classe <code>paragrafo</code> e ao elemento com id <code>pagina</code>.</p>
+<p>O <code>id</code> é geralmente único no documento. A classe pode ser aplicada a mais de um elemento e um elemento pode ter mais de uma classe. Exemplo:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p class=<span class="string">"paragrafo destaque"</span>&gt;<span class="keyword">...</span>&lt;/p&gt;</div></pre></td></tr></table></figure>
+
+<p>O elemento <code>p</code> possui as classes <code>paragrafo</code> e <code>destaque</code>.</p>
+<h3 id="Bloco_de_declaração">Bloco de declaração</h3>
+<p>O bloco de declaração contém as declarações, separadas por ponto-e-vírgula. Cada declaração é composta por <strong>propriedade</strong> e <strong>valor</strong>. Parte da chave, bem como da dificuldade, em aprender CSS está em saber as propriedades disponíveis (que podem variar conforme o browser), seus valores possíveis e como eles afetam a apresentação do conteúdo.</p>
+<p>Para saber mais sobre o CSS, consulte o <a href="http://www.w3schools.com/css/default.asp" target="_blank" rel="external">curso de CSS da W3Schools</a>.</p>
+
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-02-03T15:50:26.000Z" itemprop="dateModified">Última atualização: fev 3 2015</time>
+        <time id="page-footer-updated" datetime="2015-02-03T21:28:11.000Z" itemprop="dateModified">Última atualização: fev 3 2015</time>
         <a href="html.html" id="page-footer-prev" title="HTML">Prev</a><a href="javascript.html" id="page-footer-next" title="JavaScript">Next</a>
       </footer>
       

@@ -27,18 +27,15 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia - WebDev" type="application/atom+xml">
-  <meta name="description" content="HTML (HyperText Markup Language) é, basicamente, a linguagem base e universal para conteúdo na internet. 
-123456789101112&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset='UTF-8'&gt;&lt;ti">
+  <meta name="description" content="HTML (HyperText Markup Language) é, basicamente, a linguagem base e universal para conteúdo na internet. A versão atual é chamada HTML5 e utilizar seus recursos não é, na verdade, uma obrigação. Entre">
 <meta property="og:type" content="website">
 <meta property="og:title" content="HTML">
 <meta property="og:url" content="http://jacksongomesbr.github.com/academia-webdev/academia-webdev/docs/html.html">
 <meta property="og:site_name" content="Academia - WebDev">
-<meta property="og:description" content="HTML (HyperText Markup Language) é, basicamente, a linguagem base e universal para conteúdo na internet. 
-123456789101112&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset='UTF-8'&gt;&lt;ti">
+<meta property="og:description" content="HTML (HyperText Markup Language) é, basicamente, a linguagem base e universal para conteúdo na internet. A versão atual é chamada HTML5 e utilizar seus recursos não é, na verdade, uma obrigação. Entre">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML">
-<meta name="twitter:description" content="HTML (HyperText Markup Language) é, basicamente, a linguagem base e universal para conteúdo na internet. 
-123456789101112&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset='UTF-8'&gt;&lt;ti">
+<meta name="twitter:description" content="HTML (HyperText Markup Language) é, basicamente, a linguagem base e universal para conteúdo na internet. A versão atual é chamada HTML5 e utilizar seus recursos não é, na verdade, uma obrigação. Entre">
 <meta name="twitter:site" content="@jacksongomesbr">
 <meta property="fb:admins" content="100000247608790">
 
@@ -91,16 +88,40 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Conteúdo</strong>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Estrutura_padrão"><span class="toc-number">1.</span> <span class="toc-text">Estrutura padrão</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Elementos"><span class="toc-number">2.</span> <span class="toc-text">Elementos</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Recursos_da_API_de_programação"><span class="toc-number">3.</span> <span class="toc-text">Recursos da API de programação</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p><a href="http://www.w3.org/TR/html5/" target="_blank" rel="external">HTML (HyperText Markup Language)</a> é, basicamente, a linguagem base e universal para conteúdo na internet. </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>Title of the document<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">Content of the document......</div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
+        <p><a href="http://www.w3.org/TR/html5/" target="_blank" rel="external">HTML (HyperText Markup Language)</a> é, basicamente, a linguagem base e universal para conteúdo na internet. A versão atual é chamada HTML5 e utilizar seus recursos não é, na verdade, uma obrigação. Entretanto, aprender os elementos principais permite que o conteúdo da página seja melhor organizado semanticamente.</p>
+<h2 id="Estrutura_padrão">Estrutura padrão</h2>
+<p>O código a seguir demonstra a estrutura de um documento HTML5.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"pt-BR"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>Título do documento<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">Conteúdo do documento......</div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
 
+<p>Na linha 1, a instrução de processamento <code>DOCTYPE</code> indica que o conteúdo do arquivo é HTML5.</p>
+<p>Na linha 2, o elemento <code>html</code> possui o atributo <code>lang=&quot;pt-BR&quot;</code>, indicando que o idioma usado no documento é Português do Brasil.</p>
+<p>Na linha 4, o elemento <code>meta</code> possui o atributo <code>charset=&quot;UFT-8&quot;</code>, indicando que o texto está codificado no padrão UTF-8.</p>
+<h2 id="Elementos">Elementos</h2>
+<p>Os elementos mais importantes do HTML5 são:</p>
+<ul>
+<li><strong>Semânticos</strong>: <code>header</code>, <code>footer</code>, <code>article</code> e <code>section</code></li>
+<li><strong>Controles de Formulário</strong>: tipos numéricos, data e hora, calendário e intervalo</li>
+<li><strong>Gráficos</strong>: <code>svg</code> e <code>canvas</code></li>
+<li><strong>Multimídia</strong>: <code>audio</code> e <code>video</code></li>
+</ul>
+<h2 id="Recursos_da_API_de_programação">Recursos da API de programação</h2>
+<p>Além de elementos, o HTML5 disponibiliza novos recursos para o desenvolvedor:</p>
+<ul>
+<li>Geolocalização</li>
+<li>Arrastar e soltar</li>
+<li>Armazenamento local</li>
+<li>Cache da aplicação</li>
+<li>Web workers</li>
+<li>Notificações Enviadas pelo Servidor</li>
+</ul>
+<p>Para saber mais sobre o HTML5, veja o <a href="http://www.w3schools.com/html/default.asp" target="_blank" rel="external">curso de HTML do W3Schools</a>. </p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-02-03T15:50:26.000Z" itemprop="dateModified">Última atualização: fev 3 2015</time>
+        <time id="page-footer-updated" datetime="2015-02-03T21:17:34.000Z" itemprop="dateModified">Última atualização: fev 3 2015</time>
         <a href="comunicacao-e-servicos.html" id="page-footer-prev" title="Comunicação e serviços">Prev</a><a href="css.html" id="page-footer-next" title="CSS">Next</a>
       </footer>
       

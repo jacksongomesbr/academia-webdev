@@ -27,15 +27,21 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia - WebDev" type="application/atom+xml">
-  <meta name="description">
+  <meta name="description" content="JavaScript (ou ECMAScript) é a principal linguagem de programação da internet. As semelhanças com a linguagem Java são bastante notáveis, bem como as diferenças. 
+Execução no browser
+JavaScript é exec">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JavaScript">
 <meta property="og:url" content="http://jacksongomesbr.github.com/academia-webdev/academia-webdev/docs/javascript.html">
 <meta property="og:site_name" content="Academia - WebDev">
-<meta property="og:description">
+<meta property="og:description" content="JavaScript (ou ECMAScript) é a principal linguagem de programação da internet. As semelhanças com a linguagem Java são bastante notáveis, bem como as diferenças. 
+Execução no browser
+JavaScript é exec">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description">
+<meta name="twitter:description" content="JavaScript (ou ECMAScript) é a principal linguagem de programação da internet. As semelhanças com a linguagem Java são bastante notáveis, bem como as diferenças. 
+Execução no browser
+JavaScript é exec">
 <meta name="twitter:site" content="@jacksongomesbr">
 <meta property="fb:admins" content="100000247608790">
 
@@ -88,13 +94,29 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Conteúdo</strong>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Execução_no_browser"><span class="toc-number">1.</span> <span class="toc-text">Execução no browser</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inclusão_no_documento"><span class="toc-number">2.</span> <span class="toc-text">Inclusão no documento</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Código_externo"><span class="toc-number">2.1.</span> <span class="toc-text">Código externo</span></a></li></ol></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        
+        <p><a href="http://www.ecmascript.org/" target="_blank" rel="external"><strong>JavaScript (ou ECMAScript)</strong></a> é a principal linguagem de programação da internet. As semelhanças com a linguagem Java são bastante notáveis, bem como as diferenças. </p>
+<h2 id="Execução_no_browser">Execução no browser</h2>
+<p>JavaScript é executada no browser de forma interpretada. Isso quer dizer que o código JavaScript não é compilado, mas interpretado em tempo de execução. </p>
+<p>A ordem de execução do código é feita de cima para baixo, conforme o código estiver presente no documento. Entender esta ordem de execução é importante para facilitar não apenas o entendimento da execução do programa, mas também a correção de erros. Por ser uma linguagem interpretada, a execução das linhas subsequentes a uma linha com erro não é efetuada. Isso pode gerar problemas na execução do código. Para para aprender melhor como lidar com o fluxo de execução do código, você pode utilizar a função <strong>inspetor</strong> do seu browser (está disponível na maioria dos navegadores modernos).</p>
+<h2 id="Inclusão_no_documento">Inclusão no documento</h2>
+<p>Código JavaScript é inserido no documento por meio do elemento <code>script</code>. Exemplo:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">		alert(<span class="string">'Javascript em execução!'</span>);</div><div class="line">	<span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
+
+
+
+<h3 id="Código_externo">Código externo</h3>
+<p>Além de incluir o código JavaScript diretamente no documento, junto do HTML, você pode manter o código em um arquivo separado, com a extensão <code>.js</code> e incluí-lo no seu documento. No exemplo a seguir, o código está no arquivo <code>script.js</code> e é incluído no documento por meio do elemento <code>script</code> e o atributo <code>src</code>:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"script.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>Para aprender mais sobre o JavaScript, acesse o <a href="http://www.w3schools.com/js/default.asp" target="_blank" rel="external">curso de JavaScript do W3Schools</a>.</p>
+<p>Aqui no curso, o conteúdo de JavaScript será dividido entre entendimento da sintaxe, manipulação do HTML e utilização de bibliotecas, como jQuery e AngularJS.</p>
+
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-02-03T15:50:26.000Z" itemprop="dateModified">Última atualização: fev 3 2015</time>
+        <time id="page-footer-updated" datetime="2015-02-03T21:37:53.000Z" itemprop="dateModified">Última atualização: fev 3 2015</time>
         <a href="css.html" id="page-footer-prev" title="CSS">Prev</a>
       </footer>
       
