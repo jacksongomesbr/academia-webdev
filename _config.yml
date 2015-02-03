@@ -13,7 +13,7 @@ language: pt-br
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://jacksongomesbr.github.com/academia-webdev
-root: /
+root: /academia-webdev/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
