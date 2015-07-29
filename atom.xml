@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[Academia Webdev]]></title>
+  <subtitle><![CDATA[Um curso de desenvolvimento web]]></subtitle>
+  <link href="/academia-webdev/atom.xml" rel="self"/>
+  <link href="https://jacksongomesbr.github.com/academia-webdev/academia-webdev//"/>
+  <updated>2015-07-15T04:37:07.000Z</updated>
+  <id>https://jacksongomesbr.github.com/academia-webdev/academia-webdev//</id>
+  
+  <author>
+    <name><![CDATA[Jackson Gomes]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Lançamento]]></title>
+    <link href="https://jacksongomesbr.github.com/academia-webdev/academia-webdev/news/2015/07/15/lancamento/"/>
+    <id>https://jacksongomesbr.github.com/academia-webdev/academia-webdev/news/2015/07/15/lancamento/</id>
+    <published>2015-07-15T04:35:47.000Z</published>
+    <updated>2015-07-15T04:37:07.000Z</updated>
+    <content type="html"><![CDATA[<p>No ar o site do curso de desenvolvimento web. Por meio deste curso você ficará informado sobre as tecnologias mais recentes e avançadas para desenvolvimento de software (aplicativos) para a web, como HTML, CSS, JavaScript, AngularJS e NodeJS.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>No ar o site do curso de desenvolvimento web. Por meio deste curso você ficará informado sobre as tecnologias mais recentes e avançadas p]]>
+    </summary>
+    
+  </entry>
+  
+</feed>

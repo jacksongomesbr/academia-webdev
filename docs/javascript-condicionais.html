@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Condicionais | Academia Webdev</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/docs/javascript-condicionais.html">
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/academia-webdev/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/academia-webdev/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/academia-webdev/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/academia-webdev/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/academia-webdev/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/academia-webdev/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/academia-webdev/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/academia-webdev/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/academia-webdev/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/academia-webdev/css/navy.css" type="text/css">
+  <!-- endbuild -->
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- RSS -->
+  <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia Webdev" type="application/atom+xml">
+  <!-- Open Graph -->
+  <meta name="description" content="As instruções condicionais em JavaScript utilizam as palavras if, else, e switch.
+A instrução ifA instrução if permite definir um condicional que executa um código apenas se o condicional for verdadei">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Condicionais">
+<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/docs/javascript-condicionais.html">
+<meta property="og:site_name" content="Academia Webdev">
+<meta property="og:description" content="As instruções condicionais em JavaScript utilizam as palavras if, else, e switch.
+A instrução ifA instrução if permite definir um condicional que executa um código apenas se o condicional for verdadei">
+<meta property="og:updated_time" content="2015-07-29T17:30:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Condicionais">
+<meta name="twitter:description" content="As instruções condicionais em JavaScript utilizam as palavras if, else, e switch.
+A instrução ifA instrução if permite definir um condicional que executa um código apenas se o condicional for verdadei">
+<meta name="twitter:site" content="jacksongomes">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Swiftype -->
+  <meta class="swiftype" name="title" data-type="string" content="Condicionais">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body class="">
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <ul>
+        <li class="main-nav-item"><a href="/academia-webdev/docs/" class="main-nav-link">Docs</a></li><li class="main-nav-item"><a href="/academia-webdev/news/" class="main-nav-link">News</a></li>
+        <li class="main-nav-item">
+          <a href="https://github.com/jacksongomesbr/academia-webdev" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="search-btn-wrap" class="main-nav-item">
+      <a id="search-btn" class="main-nav-link st-search-launcher"><i class="fa fa-search"></i></a>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+    <a id="mobile-search-btn" class="st-search-launcher"></a>
+  </div>
+</header>
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Condicionais</h1>
+                <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/docs/javascript-condicionais.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
+                <p>As instruções condicionais em JavaScript utilizam as palavras <code>if</code>, <code>else</code>, e <code>switch</code>.</p>
+<h2 id="A_instrução_if" class="article-heading">A instrução if<a class="article-anchor" href="#A_instrução_if" aria-hidden="true"></a></h2><p>A instrução <code>if</code> permite definir um condicional que executa um código apenas se o condicional for verdadeiro. A sintaxe é a seguinte:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condicao) &#123;</span><br><span class="line">    código a ser executado se condicao <span class="keyword">for</span> <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Exemplo:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">if</span> (x == <span class="number">5</span>) &#123;</span><br><span class="line">    mensagem = <span class="string">"x é igual a cinco"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Neste exemplo, a variável <code>x</code> possui valor <code>5</code>. Como o condicional da instrução <code>if</code> é baseado no valor de <code>x</code>, executando o código apenas se <code>x</code> for igual a <code>5</code>, a execução executa o código interior, pois o condicional é verdadeiro.</p>
+<h2 id="A_instrução_else" class="article-heading">A instrução else<a class="article-anchor" href="#A_instrução_else" aria-hidden="true"></a></h2><p>A instrução <code>else</code> não deve ser utilizada desacompanhada da instrução <code>if</code>. Na verdade, a instrução <code>else</code> complementa a instrução <code>if</code>, executando um bloco de código quando o condicional do <code>if</code> não for verdadeiro. A sintaxe é a seguinte:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condicao) &#123;</span><br><span class="line">    código a ser executado se condicao <span class="keyword">for</span> <span class="literal">true</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    código a ser executado se o condicao <span class="keyword">for</span> <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Exemplo:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (x == <span class="number">5</span>) &#123;</span><br><span class="line">    mensagem = <span class="string">"x é igual a cinco"</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    mensagem = <span class="string">"x é diferente de cinco"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Neste exemplo, a variável <code>x</code> possui valor <code>1</code>. A execução do código fará com que o bloco do <code>else</code> seja executado, pois o condicional <code>x == 5</code> é falso.</p>
+<h2 id="A_instrução_else_if" class="article-heading">A instrução else if<a class="article-anchor" href="#A_instrução_else_if" aria-hidden="true"></a></h2><p>De forma similar às instruções anteriores, a instrução <code>else if</code> executa um código se uma condição for verdadeira. A sintaxe é a seguinte:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (condicao1) &#123;</span><br><span class="line">    código a ser executado se condicao1 <span class="keyword">for</span> <span class="literal">true</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (condicao2) &#123;</span><br><span class="line">    código a ser executado se condicao2 <span class="keyword">for</span> <span class="literal">true</span> e condicao1 <span class="keyword">for</span> <span class="literal">false</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    código a ser executado se condicao1 e condicao2 forem <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Exemplo:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">if</span> (x &gt; <span class="number">10</span>) &#123;</span><br><span class="line">    mensagem = <span class="string">"x é maior que 10"</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (x &gt; <span class="number">5</span> &amp;&amp; x &lt; <span class="number">10</span>) &#123;</span><br><span class="line">    mensagem = <span class="string">"x é maior que cinco e menor que 10"</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    mensagem = <span class="string">"x é menor que cinco"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="A_instrução_switch" class="article-heading">A instrução switch<a class="article-anchor" href="#A_instrução_switch" aria-hidden="true"></a></h2><p>A instrução <code>switch</code> permite executar código com base em diferentes condições. De certo modo, é similar ao uso da estrutura <code>if...else if...else</code>. A sintaxe é:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (expressao) &#123;</span><br><span class="line">    <span class="keyword">case</span> n1:</span><br><span class="line">        código a ser executado se expressão <span class="keyword">for</span> igual a n1</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> n2:</span><br><span class="line">        código a ser executado se expressão <span class="keyword">for</span> igual a n2</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    defatul:</span><br><span class="line">        código a ser executado se expressão <span class="keyword">for</span> diferente dos casos anteriores  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Exemplo:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dia = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">switch</span> (dia) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é domingo"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é segunda-feira"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é terça-feira"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é quarta-feira"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é quinta-feira"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é sexta-feira"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">        mensagem = <span class="string">"hoje é sábado"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>No exemplo, a variável <code>dia</code> possui valor <code>0</code>. Assim, apenas o caso que corresponde ao valor <code>0</code> será executado (o primeiro).</p>
+<p>Outro exemplo:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dia = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">switch</span> (dia) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">        mensagem = <span class="string">"hora de trabalhar!"</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        mensagem = <span class="string">"hora de descansar!"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>No exemplo, a variável <code>dia</code> possui o valor <code>0</code>. Como nenhum dos casos equivale ao valor da variável, o bloco <code>default</code> será executado.</p>
+<p>A utilização de <code>switch</code> é adequada apenas nos casos em que é possível enumerar os valores da expressão. Em outros casos, melhor utilizar a instrução <code>if</code>.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2015-07-29T17:30:52.000Z" itemprop="dateModified">Última atualização: 2015-07-29</time>
+                <a href="javascript-tipos-de-dados.html" class="article-footer-prev" title="Tipos de Dados"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="javascript-lacos-de-repeticao.html" class="article-footer-next" title="Laços de repetição"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'academiawebdev';
+  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/docs/javascript-condicionais.html';
+  var disqus_title = "Condicionais";
+  var disqus_config = function(){
+    this.language = 'pt_BR';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#A_instrução_if"><span class="toc-text">A instrução if</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A_instrução_else"><span class="toc-text">A instrução else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A_instrução_else_if"><span class="toc-text">A instrução else if</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A_instrução_switch"><span class="toc-text">A instrução switch</span></a></li></ol>
+              <a href="#" id="article-toc-top">Voltar para o topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="sidebar-link">Comunicação e serviços</a><strong class="sidebar-title">Conceitos básicos</strong><a href="html.html" class="sidebar-link">HTML</a><a href="css.html" class="sidebar-link">CSS</a><a href="javascript.html" class="sidebar-link">Javascript</a><strong class="sidebar-title">Javascript</strong><a href="javascript-sintaxe.html" class="sidebar-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="sidebar-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="sidebar-link current">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="sidebar-link">Laços de repetição</a><a href="javascript-funcoes.html" class="sidebar-link">Funções</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2015 <a href="http://jacksongomesbr.github.com/" target="_blank">Jackson Gomes</a><br>
+      Licenciado sob <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/jacksongomes" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/jacksongomesbr/academia-webdev" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="/academia-webdev/docs/" class="mobile-nav-link">Docs</a></li><li class="mobile-nav-item"><a href="/academia-webdev/news/" class="mobile-nav-link">News</a></li>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/jacksongomesbr/academia-webdev" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="mobile-nav-link">Comunicação e serviços</a><strong class="mobile-nav-title">Conceitos básicos</strong><a href="html.html" class="mobile-nav-link">HTML</a><a href="css.html" class="mobile-nav-link">CSS</a><a href="javascript.html" class="mobile-nav-link">Javascript</a><strong class="mobile-nav-title">Javascript</strong><a href="javascript-sintaxe.html" class="mobile-nav-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="mobile-nav-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="mobile-nav-link current">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="mobile-nav-link">Laços de repetição</a><a href="javascript-funcoes.html" class="mobile-nav-link">Funções</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/javascript-condicionais.html">
+      
+        <option value="en">English</option>
+      
+        <option value="pt-br" selected>Português</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/academia-webdev/js/lang_select.js" type="text/javascript"></script>
+<script src="/academia-webdev/js/toc.js" type="text/javascript"></script>
+<script src="/academia-webdev/js/mobile_nav.js" type="text/javascript"></script>
+<!-- endbuild -->
+<script src="//cdn.jsdelivr.net/retinajs/1.1.0/retina.min.js" async></script>
+
+<!-- Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+
+  _st('install','EwN4HMy_KMxTK_GMjV1z');
+</script>
+</body>
+</html>
