@@ -34,20 +34,20 @@
   <!-- Open Graph -->
   <meta name="description" content="Laços de repetição podem ser: for, for in, while e do while.
 Instrução forA instrução for representa um laço de repetição. A sintaxe é a seguinte:
-123for(instrucao 1; instrucao 2; instrucao 3) &amp;#123;">
+123for (instrucao 1; instrucao 2; instrucao 3) &amp;#123;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Laços de Repetição">
 <meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/docs/javascript-lacos-de-repeticao.html">
 <meta property="og:site_name" content="Academia Webdev">
 <meta property="og:description" content="Laços de repetição podem ser: for, for in, while e do while.
 Instrução forA instrução for representa um laço de repetição. A sintaxe é a seguinte:
-123for(instrucao 1; instrucao 2; instrucao 3) &amp;#123;">
-<meta property="og:updated_time" content="2015-07-29T21:08:02.000Z">
+123for (instrucao 1; instrucao 2; instrucao 3) &amp;#123;">
+<meta property="og:updated_time" content="2015-08-05T19:08:28.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Laços de Repetição">
 <meta name="twitter:description" content="Laços de repetição podem ser: for, for in, while e do while.
 Instrução forA instrução for representa um laço de repetição. A sintaxe é a seguinte:
-123for(instrucao 1; instrucao 2; instrucao 3) &amp;#123;">
+123for (instrucao 1; instrucao 2; instrucao 3) &amp;#123;">
 <meta name="twitter:site" content="jacksongomes">
 <meta property="fb:admins" content="100000247608790">
   <!-- Swiftype -->
@@ -105,18 +105,18 @@ Instrução forA instrução for representa um laço de repetição. A sintaxe �
               <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
                 <p>Laços de repetição podem ser: <code>for</code>, <code>for in</code>, <code>while</code> e <code>do while</code>.</p>
 <h2 id="Instrução_for" class="article-heading">Instrução for<a class="article-anchor" href="#Instrução_for" aria-hidden="true"></a></h2><p>A instrução <code>for</code> representa um laço de repetição. A sintaxe é a seguinte:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(instrucao <span class="number">1</span>; instrucao <span class="number">2</span>; instrucao <span class="number">3</span>) &#123;</span><br><span class="line">    código a ser executado</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (instrucao <span class="number">1</span>; instrucao <span class="number">2</span>; instrucao <span class="number">3</span>) &#123;</span><br><span class="line">    código a ser executado</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>A <code>instrucao 1</code> executa antes do laço de repetição. A <code>instrucao 2</code> define uma condição para a execução do laço de repetição. A <code>instrucao 3</code> é executada a cada passo do laço de repetição.</p>
 <p>Exemplo:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mensagem = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">    mensagem += <span class="string">"Numero: "</span> + i + <span class="string">"\n"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>O uso do laço de repetição no código de exemplo faz com que o código da linha 3 seja executado enquanto a condição <code>i &lt; 10</code> for verdadeira. Neste caso, como <code>i = 0</code>, o código executa 10 vezes.</p>
 <h2 id="Instrução_for…in" class="article-heading">Instrução for…in<a class="article-anchor" href="#Instrução_for…in" aria-hidden="true"></a></h2><p>A instrução <code>for...in</code> permite iterar pelos atributos de um objeto. A sintaxe é similar à da instrução <code>for</code>:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(identificador <span class="keyword">in</span> expressao) &#123;</span><br><span class="line">    código a ser executado</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (identificador <span class="keyword">in</span> expressao) &#123;</span><br><span class="line">    código a ser executado</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Exemplo:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pessoa = &#123;id : <span class="number">1</span>, nome : <span class="string">"José"</span>, idade : <span class="number">18</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mensagem = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> a <span class="keyword">in</span> pessoa) &#123;</span><br><span class="line">    mensagem += a + <span class="string">" - "</span> + pessoa[a];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pessoa = &#123;id : <span class="number">1</span>, nome : <span class="string">"José"</span>, idade : <span class="number">18</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mensagem = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> a <span class="keyword">in</span> pessoa) &#123;</span><br><span class="line">    mensagem += a + <span class="string">" - "</span> + pessoa[a];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Neste caso, a sintaxe permite acessar um atributo do objeto semelhante ao acesso de um índice em um array.</p>
 <p>A instrução <code>for...in</code> também pode ser utilizada para iterar pelos elementos de um array. Exemplo:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">var</span> s = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> n) &#123;</span><br><span class="line">    s += n[i]; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">var</span> s = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> n) &#123;</span><br><span class="line">    s += n[i]; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Neste exemplo, o laço de repetição itera pelos elementos do array e calcula a soma dos seus números.</p>
 <h2 id="Instrução_while" class="article-heading">Instrução while<a class="article-anchor" href="#Instrução_while" aria-hidden="true"></a></h2><p>A instrução <code>while</code> executa um código enquanto uma condição for satisfeita. A sintaxe é a seguinte:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (condicao) &#123;</span><br><span class="line">    código a ser executado</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -133,10 +133,11 @@ Instrução forA instrução for representa um laço de repetição. A sintaxe �
 <li>a média das idades dos homens; e</li>
 <li>a média das idades das mulheres.</li>
 </ul>
+<p><strong>Exercício 2A</strong>: Na implementação do <strong>exercício 2</strong> (alterando-a diretamente ou em uma versão alternativa), utilize objetos para representar os dados das pessoas.</p>
 </blockquote>
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-07-29T21:08:02.000Z" itemprop="dateModified">Última atualização: 2015-07-29</time>
+                <time class="article-footer-updated" datetime="2015-08-05T19:08:28.607Z" itemprop="dateModified">Última atualização: 2015-08-05</time>
                 <a href="javascript-condicionais.html" class="article-footer-prev" title="Condicionais"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="javascript-funcoes.html" class="article-footer-next" title="Funções"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -169,7 +170,7 @@ Instrução forA instrução for representa um laço de repetição. A sintaxe �
         </div>
       </article>
       <aside id="sidebar" role="navigation">
-  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="sidebar-link">Comunicação e serviços</a><strong class="sidebar-title">Conceitos básicos</strong><a href="html.html" class="sidebar-link">HTML</a><a href="css.html" class="sidebar-link">CSS</a><a href="javascript.html" class="sidebar-link">Javascript</a><strong class="sidebar-title">Javascript</strong><a href="javascript-sintaxe.html" class="sidebar-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="sidebar-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="sidebar-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="sidebar-link current">Laços de repetição</a><a href="javascript-funcoes.html" class="sidebar-link">Funções</a></div>
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="sidebar-link">Comunicação e serviços</a><strong class="sidebar-title">Conceitos básicos</strong><a href="html.html" class="sidebar-link">HTML</a><a href="css.html" class="sidebar-link">CSS</a><a href="javascript.html" class="sidebar-link">Javascript</a><strong class="sidebar-title">Javascript</strong><a href="javascript-sintaxe.html" class="sidebar-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="sidebar-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="sidebar-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="sidebar-link current">Laços de repetição</a><a href="javascript-funcoes.html" class="sidebar-link">Funções</a><a href="javascript-objetos.html" class="sidebar-link">Objetos</a></div>
 </aside>
     </div>
   </div>
@@ -197,7 +198,7 @@ Instrução forA instrução for representa um laço de repetição. A sintaxe �
       </li>
     </ul>
     
-      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="mobile-nav-link">Comunicação e serviços</a><strong class="mobile-nav-title">Conceitos básicos</strong><a href="html.html" class="mobile-nav-link">HTML</a><a href="css.html" class="mobile-nav-link">CSS</a><a href="javascript.html" class="mobile-nav-link">Javascript</a><strong class="mobile-nav-title">Javascript</strong><a href="javascript-sintaxe.html" class="mobile-nav-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="mobile-nav-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="mobile-nav-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="mobile-nav-link current">Laços de repetição</a><a href="javascript-funcoes.html" class="mobile-nav-link">Funções</a>
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="mobile-nav-link">Comunicação e serviços</a><strong class="mobile-nav-title">Conceitos básicos</strong><a href="html.html" class="mobile-nav-link">HTML</a><a href="css.html" class="mobile-nav-link">CSS</a><a href="javascript.html" class="mobile-nav-link">Javascript</a><strong class="mobile-nav-title">Javascript</strong><a href="javascript-sintaxe.html" class="mobile-nav-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="mobile-nav-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="mobile-nav-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="mobile-nav-link current">Laços de repetição</a><a href="javascript-funcoes.html" class="mobile-nav-link">Funções</a><a href="javascript-objetos.html" class="mobile-nav-link">Objetos</a>
     
   </div>
   <div id="mobile-lang-select-wrap">
