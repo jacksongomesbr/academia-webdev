@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/htmldom-forms.html</loc>
+    <lastmod>2015-09-02T21:38:37.077Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/htmldom-eventos.html</loc>
+    <lastmod>2015-09-02T19:08:15.191Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/htmldom-intro.html</loc>
+    <lastmod>2015-09-02T18:46:52.381Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript.html</loc>
+    <lastmod>2015-09-02T18:02:09.915Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-objetos.html</loc>
     <lastmod>2015-08-05T19:52:43.222Z</lastmod>
   </url>
@@ -14,11 +34,6 @@
   <url>
     <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-tipos-de-dados.html</loc>
     <lastmod>2015-08-05T19:04:58.155Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript.html</loc>
-    <lastmod>2015-07-29T21:51:39.000Z</lastmod>
   </url>
   
   <url>
