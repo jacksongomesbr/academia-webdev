@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Formulários | Academia Webdev</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-forms.html">
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/academia-webdev/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/academia-webdev/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/academia-webdev/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/academia-webdev/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/academia-webdev/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/academia-webdev/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/academia-webdev/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/academia-webdev/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/academia-webdev/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/academia-webdev/css/navy.css" type="text/css">
+  <!-- endbuild -->
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- RSS -->
+  <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia Webdev" type="application/atom+xml">
+  <!-- Open Graph -->
+  <meta name="description" content="Embora seja possível, por meio da árvore DOM, manipular qualquer tipo de documento HTML, algumas facilidades são fornecidas. Uma delas é a maneira de lidar com formulários. O objeto document possui a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Formulários">
+<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-forms.html">
+<meta property="og:site_name" content="Academia Webdev">
+<meta property="og:description" content="Embora seja possível, por meio da árvore DOM, manipular qualquer tipo de documento HTML, algumas facilidades são fornecidas. Uma delas é a maneira de lidar com formulários. O objeto document possui a">
+<meta property="og:updated_time" content="2015-09-02T21:38:37.077Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Formulários">
+<meta name="twitter:description" content="Embora seja possível, por meio da árvore DOM, manipular qualquer tipo de documento HTML, algumas facilidades são fornecidas. Uma delas é a maneira de lidar com formulários. O objeto document possui a">
+<meta name="twitter:site" content="jacksongomes">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Swiftype -->
+  <meta class="swiftype" name="title" data-type="string" content="Formulários">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body class="">
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <ul>
+        <li class="main-nav-item"><a href="/academia-webdev/fundamentos/" class="main-nav-link">Fundamentos</a></li><li class="main-nav-item"><a href="/academia-webdev/news/" class="main-nav-link">News</a></li><li class="main-nav-item"><a href="/academia-webdev/angularjs/" class="main-nav-link">AngularJS</a></li><li class="main-nav-item"><a href="/academia-webdev/bootstrap/" class="main-nav-link">Bootstrap</a></li>
+        <li class="main-nav-item">
+          <a href="https://github.com/jacksongomesbr/academia-webdev" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="search-btn-wrap" class="main-nav-item">
+      <a id="search-btn" class="main-nav-link st-search-launcher"><i class="fa fa-search"></i></a>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+    <a id="mobile-search-btn" class="st-search-launcher"></a>
+  </div>
+</header>
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Formulários</h1>
+                <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/fundamentos/htmldom-forms.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
+                <p>Embora seja possível, por meio da árvore DOM, manipular qualquer tipo de documento HTML, algumas facilidades são fornecidas. Uma delas é a maneira de lidar com formulários. O objeto <code>document</code> possui a propriedade <code>forms</code>, um array que representa os formulários presentes na página. Este array pode ser acessado por índice numérico ou string (correspondendo ao nome do formulário).</p>
+<h2 id="Entrada_básica" class="article-heading">Entrada básica<a class="article-anchor" href="#Entrada_básica" aria-hidden="true"></a></h2><p>O exemplo a seguir ilustra a utilização do HTML DOM para acessar dados do formulário.</p>
+<iframe src="http://embed.plnkr.co/g79uKYMF2h5EfgmJdpfK/preview" width="100%" height="400"></iframe>
+
+<p>No HTML, é importante destacar o trecho referente ao formulário:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">form</span> <span class="attribute">onsubmit</span>=<span class="value">"return false;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"primeiro_nome"</span>&gt;</span>Primeiro nome:<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"primeiro_nome"</span> <span class="attribute">id</span>=<span class="value">"primeiro_nome"</span> </span><br><span class="line">        <span class="attribute">placeholder</span>=<span class="value">"Informe seu primeiro nome"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"segundo_nome"</span>&gt;</span>Segundo nome:<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"segundo_nome"</span> <span class="attribute">id</span>=<span class="value">"segundo_nome"</span> </span><br><span class="line">        <span class="attribute">placeholder</span>=<span class="value">"Informe seu segundo nome"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">onclick</span>=<span class="value">"enviarDados()"</span>&gt;</span>Enviar dados<span class="tag">&lt;/<span class="title">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">form</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>Seu nome completo é:<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"mensagem"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>No elemento <code>form</code> está sendo utilizado o evento <code>onsubmit</code>, que é disparado quando o formulário está enviando seus dados. O envio dos dados do formulário é causado pelo clique em um botão ou pelo pressionar da tecla <code>ENTER</code> em um campo de texto. O valor do atributo <code>onsubmit</code> é <code>return false;</code> e representa o código necessário para cancelar o envio de dados do formulário. Isto é necessário para que a página não faça um “refresh”.</p>
+<p>Os elementos <code>input</code> representam os campos de entrada de texto e possuem o atributo <code>name</code>, que indica o nome do campo e que será usado, posteriormente, para ter acesso ao valor informado pelo usuário.   </p>
+<p>O elemento <code>button</code>, que permite o envio dos dados, possui o atributo <code>onclick</code> com valor <code>enviarDados()</code>, ou seja, ao detectar o clique no botão, a página HTML chamará a função <code>enviarDados()</code>.</p>
+<p>O código JavaScript da função <code>enviarDados()</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">enviarDados</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> form = <span class="built_in">document</span>.forms[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">var</span> primeiro_nome = form[<span class="string">"primeiro_nome"</span>].value;</span><br><span class="line">    <span class="keyword">var</span> segundo_nome = form[<span class="string">"segundo_nome"</span>].value;</span><br><span class="line">    <span class="keyword">var</span> mensagem = <span class="built_in">document</span>.getElementById(<span class="string">'mensagem'</span>);</span><br><span class="line">    mensagem.innerHTML = primeiro_nome + <span class="string">' '</span> + segundo_nome;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Na função <code>enviarDados()</code> o destaque vai para o seguinte:</p>
+<ul>
+<li>o objeto <code>document</code> fornece o objeto <code>forms</code>, que é um vetor representando os formulários da página. Como só há um formulário, então acessa-se o índice <code>0</code>;</li>
+<li>a variável <code>form</code>, que representa o formulário, permite acessar cada campo pelo seu nome, como se a variável fosse uma espécie de array. A variável <code>primeiro_nome</code> recebe o valor do campo “primeiro_nome” por meio de <code>form[&quot;primeiro_nome&quot;].value</code>. A propriedade <code>value</code> retorna o valor do campo. Um processo semelhante é feito para a variável <code>segundo_nome</code>;</li>
+<li>por fim, uma string é apresentada na tela, concatenando o primeiro e o segundo nomes.</li>
+</ul>
+<p>Outra forma de acessar os campos do formulário é por meio da propriedade <code>elements</code> do objeto que representa o formulário. Por exemplo, o código a seguir seria similar ao código anterior:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> form = <span class="built_in">document</span>.forms[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">var</span> primeiro_nome = form.elements[<span class="number">0</span>].value;</span><br><span class="line"><span class="keyword">var</span> segundo_nome = form.elements[<span class="number">1</span>].value;</span><br></pre></td></tr></table></figure>
+<p>Da mesma forma, o resultado seria o mesmo para o código a seguir, que utiliza os nomes dos campos ao invés do índice do array <code>elements</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> form = <span class="built_in">document</span>.forms[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">var</span> primeiro_nome = form.elements[<span class="string">'primeiro_nome'</span>].value;</span><br><span class="line"><span class="keyword">var</span> segundo_nome = form.elements[<span class="string">'segundo_nome'</span>].value;</span><br></pre></td></tr></table></figure>
+<h2 id="Tipos_de_campos_de_formulário" class="article-heading">Tipos de campos de formulário<a class="article-anchor" href="#Tipos_de_campos_de_formulário" aria-hidden="true"></a></h2><p>O elemento <code>input</code> com o atributo <code>type</code> com valor <code>text</code> representa um campo de texto. Outros valores para o atributo <code>type</code> permitem representar outras formas de entrada de dados:</p>
+<ul>
+<li><code>checkbox</code></li>
+<li><code>radio</code></li>
+<li><code>password</code></li>
+<li><code>color</code></li>
+<li><code>date</code></li>
+<li><code>datetime</code></li>
+<li><code>datetime-local</code></li>
+<li><code>email</code></li>
+<li><code>month</code></li>
+<li><code>number</code></li>
+<li><code>range</code></li>
+<li><code>search</code></li>
+<li><code>tel</code></li>
+<li><code>time</code></li>
+<li><code>url</code></li>
+<li><code>week</code></li>
+</ul>
+<p>Além do elemento <code>input</code> o formulário pode conter os seguintes elementos representando maneiras diferentes de entrada de dados:</p>
+<ul>
+<li><code>select</code>: representa uma caixa de seleção (um “drop-down”). Contém elementos <code>option</code>, que representam as opções do <code>select</code>.</li>
+<li><code>textarea</code>: representa uma caixa de texto com várias linhas;</li>
+<li><code>datalist</code>: representa valores iniciais para um campo <code>text</code>;</li>
+<li><code>keygen</code>: gera um par de chaves pública e privada para que seja utilizado um processo de criptografia assimétrica.</li>
+</ul>
+<h2 id="Restrições_em_campos_de_formulário" class="article-heading">Restrições em campos de formulário<a class="article-anchor" href="#Restrições_em_campos_de_formulário" aria-hidden="true"></a></h2><p>A lista a seguir apresenta as restrições mais comuns em campos de formulário:</p>
+<ul>
+<li><code>disabled</code>: o campo torna-se desabilitado;</li>
+<li><code>max</code>: define o valor máximo para um campo (ex: em campo <code>number</code>);</li>
+<li><code>maxlength</code>: define a quantidade máxima de caracteres em um campo (ex: campo <code>text</code>);</li>
+<li><code>min</code>: define o valor mínimo para um campo (ex: em campo <code>number</code>);</li>
+<li><code>pattern</code>: define uma expressão regular para validar a entrada de dados;</li>
+<li><code>readonly</code>: o campo torna-se apenas para leitura;</li>
+<li><code>required</code>: o campo é de preenchimento obrigatório;</li>
+<li><code>size</code>: define a quantidade de caracteres do campo;</li>
+<li><code>step</code>: define o intervalo, passo de incremento (ex: em campo <code>number</code>);</li>
+<li><code>value</code>: define o valor do campo.</li>
+</ul>
+<p>O exemplo a seguir ilustra a utilização de vários campos de formulários e restrições sobre eles.</p>
+<iframe src="http://embed.plnkr.co/5GezzqU2yd5cuwpeOCVE/preview" width="100%" height="400"></iframe>
+
+<blockquote class="note info"><strong class="note-title">Exercícios</strong><p><strong>Exercício 1</strong>: Crie um aplicativo web que permite cadastrar dados de pessoas: nome, idade e sexo. Quando os dados do formulário forem salvos eles devem ser armazenados para uso posterior e o formulário deve ser limpo (campos recebem o valor padrão). Um botão deve permitir que o usuário veja a lista de dados cadastrados. Um botão deve permitir que o usuário veja o nome da pessoa mais nova e mais velha para cada sexo.</p>
+<p><strong>Exercício 2</strong>: Incremente as funcionalidades do aplicativo desenvolvido na parte 1: </p>
+<ul>
+<li>a lista de pessoas deve ser apresentada automaticamente, após cada novo cadastro;</li>
+<li>deve ser possível excluir uma pessoa da lista.</li>
+</ul>
+<p><strong>Exercício 3</strong>: Incremente as funcionalidades do aplicativo desenvolvido na parte 2: </p>
+<ul>
+<li>deve ser possível editar os dados de uma pessoa da lista;</li>
+<li>apresente os dados na forma de uma tabela.</li>
+</ul>
+<p><strong>Exercício 4</strong>: Incremente as funcionalidades do aplicativo desenvolvido na parte 3:</p>
+<ul>
+<li>na tabela que apresenta os dados, as linhas que representam as pessoas mais velhas e mais novas devem ser apresentadas de forma diferente. Por exemplo, as pessoas mais velhas são apresentadas em linhas com fundo amarelo, enquanto as pessoas mais novas são apresentadas em linhas com fundo verde claro.</li>
+<li>a funcionalide anterior deve ser apresentada sempre que uma pessoa for adicionada ou removida da lista, ou quando seus dados tiverem sido alterados.</li>
+</ul>
+</blockquote> 
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2015-09-02T21:38:37.077Z" itemprop="dateModified">Última atualização: 2015-09-02</time>
+                <a href="htmldom-eventos.html" class="article-footer-prev" title="Eventos"><i class="fa fa-chevron-left"></i><span>Anterior</span></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'academiawebdev';
+  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-forms.html';
+  var disqus_title = "Formulários";
+  var disqus_config = function(){
+    this.language = 'pt_BR';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Entrada_básica"><span class="toc-text">Entrada básica</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tipos_de_campos_de_formulário"><span class="toc-text">Tipos de campos de formulário</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restrições_em_campos_de_formulário"><span class="toc-text">Restrições em campos de formulário</span></a></li></ol>
+              <a href="#" id="article-toc-top">Voltar para o topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="sidebar-link">Comunicação e serviços</a><strong class="sidebar-title">Conceitos básicos</strong><a href="html.html" class="sidebar-link">HTML</a><a href="css.html" class="sidebar-link">CSS</a><a href="javascript.html" class="sidebar-link">Javascript</a><strong class="sidebar-title">Javascript</strong><a href="javascript-sintaxe.html" class="sidebar-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="sidebar-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="sidebar-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="sidebar-link">Laços de repetição</a><a href="javascript-funcoes.html" class="sidebar-link">Funções</a><a href="javascript-objetos.html" class="sidebar-link">Objetos</a><strong class="sidebar-title">HTML DOM</strong><a href="htmldom-intro.html" class="sidebar-link">Visão geral</a><a href="htmldom-eventos.html" class="sidebar-link">Eventos</a><a href="htmldom-forms.html" class="sidebar-link current">Formulários</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2015 <a href="http://jacksongomesbr.github.com/" target="_blank">Jackson Gomes</a><br>
+      Licenciado sob <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/jacksongomes" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/jacksongomesbr/academia-webdev" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="/academia-webdev/fundamentos/" class="mobile-nav-link">Fundamentos</a></li><li class="mobile-nav-item"><a href="/academia-webdev/news/" class="mobile-nav-link">News</a></li><li class="mobile-nav-item"><a href="/academia-webdev/angularjs/" class="mobile-nav-link">AngularJS</a></li><li class="mobile-nav-item"><a href="/academia-webdev/bootstrap/" class="mobile-nav-link">Bootstrap</a></li>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/jacksongomesbr/academia-webdev" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="mobile-nav-link">Comunicação e serviços</a><strong class="mobile-nav-title">Conceitos básicos</strong><a href="html.html" class="mobile-nav-link">HTML</a><a href="css.html" class="mobile-nav-link">CSS</a><a href="javascript.html" class="mobile-nav-link">Javascript</a><strong class="mobile-nav-title">Javascript</strong><a href="javascript-sintaxe.html" class="mobile-nav-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="mobile-nav-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="mobile-nav-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="mobile-nav-link">Laços de repetição</a><a href="javascript-funcoes.html" class="mobile-nav-link">Funções</a><a href="javascript-objetos.html" class="mobile-nav-link">Objetos</a><strong class="mobile-nav-title">HTML DOM</strong><a href="htmldom-intro.html" class="mobile-nav-link">Visão geral</a><a href="htmldom-eventos.html" class="mobile-nav-link">Eventos</a><a href="htmldom-forms.html" class="mobile-nav-link current">Formulários</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en">English</option>
+      
+        <option value="pt-br" selected>Português</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/academia-webdev/js/lang_select.js" type="text/javascript"></script>
+<script src="/academia-webdev/js/toc.js" type="text/javascript"></script>
+<script src="/academia-webdev/js/mobile_nav.js" type="text/javascript"></script>
+<!-- endbuild -->
+<script src="//cdn.jsdelivr.net/retinajs/1.1.0/retina.min.js" async></script>
+
+<!-- Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+
+  _st('install','EwN4HMy_KMxTK_GMjV1z');
+</script>
+</body>
+</html>

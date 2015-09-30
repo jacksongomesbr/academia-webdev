@@ -2,58 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/htmldom-forms.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/bootstrap/iniciando.html</loc>
+    <lastmod>2015-09-30T21:46:47.209Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/bootstrap/formularios.html</loc>
+    <lastmod>2015-09-30T21:42:34.254Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/bootstrap/fundamentos.html</loc>
+    <lastmod>2015-09-30T21:29:34.527Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/bootstrap/index.html</loc>
+    <lastmod>2015-09-30T20:22:22.714Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/index.html</loc>
+    <lastmod>2015-09-03T12:52:00.217Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-forms.html</loc>
     <lastmod>2015-09-02T21:38:37.077Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/htmldom-eventos.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-eventos.html</loc>
     <lastmod>2015-09-02T19:08:15.191Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/htmldom-intro.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-intro.html</loc>
     <lastmod>2015-09-02T18:46:52.381Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript.html</loc>
     <lastmod>2015-09-02T18:02:09.915Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-objetos.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-objetos.html</loc>
     <lastmod>2015-08-05T19:52:43.222Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-lacos-de-repeticao.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-lacos-de-repeticao.html</loc>
     <lastmod>2015-08-05T19:08:28.607Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-tipos-de-dados.html</loc>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-tipos-de-dados.html</loc>
     <lastmod>2015-08-05T19:04:58.155Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-funcoes.html</loc>
-    <lastmod>2015-07-29T21:50:57.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-funcoes.html</loc>
+    <lastmod>2015-07-29T21:50:57.376Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-condicionais.html</loc>
-    <lastmod>2015-07-29T17:30:52.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-condicionais.html</loc>
+    <lastmod>2015-07-29T17:30:52.241Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-sintaxe.html</loc>
-    <lastmod>2015-07-29T13:43:27.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-sintaxe.html</loc>
+    <lastmod>2015-07-29T13:43:27.299Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/javascript-operadores.html</loc>
-    <lastmod>2015-07-29T13:33:10.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/javascript-operadores.html</loc>
+    <lastmod>2015-07-29T13:33:10.411Z</lastmod>
   </url>
   
   <url>
@@ -62,8 +87,8 @@
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/index.html</loc>
-    <lastmod>2015-07-15T03:53:20.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/index.html</loc>
+    <lastmod>2015-07-15T03:53:20.082Z</lastmod>
   </url>
   
   <url>
@@ -72,18 +97,18 @@
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/comunicacao-e-servicos.html</loc>
-    <lastmod>2015-07-14T20:45:19.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/comunicacao-e-servicos.html</loc>
+    <lastmod>2015-07-14T20:45:19.682Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/html.html</loc>
-    <lastmod>2015-02-04T00:57:35.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/html.html</loc>
+    <lastmod>2015-02-04T00:57:35.426Z</lastmod>
   </url>
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/docs/css.html</loc>
-    <lastmod>2015-02-04T00:57:35.000Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/fundamentos/css.html</loc>
+    <lastmod>2015-02-04T00:57:35.425Z</lastmod>
   </url>
   
 </urlset>

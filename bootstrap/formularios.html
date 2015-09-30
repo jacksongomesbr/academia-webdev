@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Lançamento | Academia Webdev</title>
+  <title>Formulários | Academia Webdev</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/news/2015/07/15/lancamento/index.html">
+  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/bootstrap/formularios.html">
   <!-- Icon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/academia-webdev/icon/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/academia-webdev/icon/apple-touch-icon-114x114.png">
@@ -32,20 +32,20 @@
   <!-- RSS -->
   <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia Webdev" type="application/atom+xml">
   <!-- Open Graph -->
-  <meta name="description" content="No ar o site do curso de desenvolvimento web. Por meio deste curso você ficará informado sobre as tecnologias mais recentes e avançadas para desenvolvimento de software (aplicativos) para a web, como">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Lançamento">
-<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/news/2015/07/15/lancamento/index.html">
+  <meta name="description" content="O Bootstrap fornece classes para lidar com formulários. As classes CSS mais utilizadas neste processo são form-control (aplicadas a campos e elementos de fomrulário) e form-group, para melhor espaçame">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Formulários">
+<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/bootstrap/formularios.html">
 <meta property="og:site_name" content="Academia Webdev">
-<meta property="og:description" content="No ar o site do curso de desenvolvimento web. Por meio deste curso você ficará informado sobre as tecnologias mais recentes e avançadas para desenvolvimento de software (aplicativos) para a web, como">
-<meta property="og:updated_time" content="2015-07-15T04:37:07.000Z">
+<meta property="og:description" content="O Bootstrap fornece classes para lidar com formulários. As classes CSS mais utilizadas neste processo são form-control (aplicadas a campos e elementos de fomrulário) e form-group, para melhor espaçame">
+<meta property="og:updated_time" content="2015-09-30T21:42:34.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lançamento">
-<meta name="twitter:description" content="No ar o site do curso de desenvolvimento web. Por meio deste curso você ficará informado sobre as tecnologias mais recentes e avançadas para desenvolvimento de software (aplicativos) para a web, como">
+<meta name="twitter:title" content="Formulários">
+<meta name="twitter:description" content="O Bootstrap fornece classes para lidar com formulários. As classes CSS mais utilizadas neste processo são form-control (aplicadas a campos e elementos de fomrulário) e form-group, para melhor espaçame">
 <meta name="twitter:site" content="jacksongomes">
 <meta property="fb:admins" content="100000247608790">
   <!-- Swiftype -->
-  <meta class="swiftype" name="title" data-type="string" content="Lançamento">
+  <meta class="swiftype" name="title" data-type="string" content="Formulários">
   <!-- Google Analytics -->
   
 <script>
@@ -86,27 +86,39 @@
   </div>
 </header>
     <div id="content-wrap">
-  <div class="wrapper">
-    <div class="inner">
-      <article class="article post" itemscope itemtype="http://schema.org/Article">
-  <header class="article-header">
-    
-      <h1 class="article-title" itemprop="name">Lançamento</h1>
-    
-    <a href="/academia-webdev/news/2015/07/15/lancamento/" class="article-date"><time datetime="2015-07-15T04:35:47.000Z">2015-07-15</time></a>
-  </header>
-  <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
-    <p>No ar o site do curso de desenvolvimento web. Por meio deste curso você ficará informado sobre as tecnologias mais recentes e avançadas para desenvolvimento de software (aplicativos) para a web, como HTML, CSS, JavaScript, AngularJS e NodeJS.</p>
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Formulários</h1>
+                <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/bootstrap/formularios.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
+                <p>O Bootstrap fornece classes para lidar com formulários. As classes CSS mais utilizadas neste processo são <code>form-control</code> (aplicadas a campos e elementos de fomrulário) e <code>form-group</code>, para melhor espaçamento dos elementos do formulário.</p>
+<p>O código a seguir ilustra um formulário.</p>
+<iframe src="http://embed.plnkr.co/lsqlyDyrECTmTNkuaC2g/preview" width="100%" height="400"></iframe>
 
-  </div>
-  
+<p>Para lidar com <code>radiobutton</code> e <code>checkbox</code> é necessário utilizar as classes <code>radio</code> e <code>checkbox</code>, respectivamente. Exemplo:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"checkbox"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span>Aceito os termos</span><br><span class="line">  <span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"radio"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">label</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span>&gt;</span>M<span class="tag">&lt;/<span class="title">label</span>&gt;</span> <span class="tag">&lt;<span class="title">label</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span>&gt;</span>F<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Se preferir manter os controles em uma linha, utilize as classes <code>radio-inline</code> e <code>checkbox-inline</code>.</p>
+<h2 id="Tamanho_dos_controles" class="article-heading">Tamanho dos controles<a class="article-anchor" href="#Tamanho_dos_controles" aria-hidden="true"></a></h2><p>O tamanho dos controles pode ser definido por meio das classes <code>input-lg</code> (maior tamanho), <code>input-sm</code> (menor tamanho). O tamanho normal não necessita de uma classe.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2015-09-30T21:42:34.254Z" itemprop="dateModified">Última atualização: 2015-09-30</time>
+                <a href="fundamentos.html" class="article-footer-prev" title="Fundamentos"><i class="fa fa-chevron-left"></i><span>Anterior</span></a>
+              </footer>
+              
 <section id="comments">
   <div id="disqus_thread"></div>
 </section>
 <script>
   var disqus_shortname = 'academiawebdev';
-  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/news/2015/07/15/lancamento/index.html';
-  var disqus_title = "Lançamento";
+  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/bootstrap/formularios.html';
+  var disqus_title = "Formulários";
   var disqus_config = function(){
     this.language = 'pt_BR';
   };
@@ -117,7 +129,20 @@
   })();
 </script>
 
-</article>
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tamanho_dos_controles"><span class="toc-text">Tamanho dos controles</span></a></li></ol>
+              <a href="#" id="article-toc-top">Voltar para o topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="iniciando.html" class="sidebar-link">Iniciando</a><a href="fundamentos.html" class="sidebar-link">Fundamentos</a><a href="formularios.html" class="sidebar-link current">Formulários</a></div>
+</aside>
     </div>
   </div>
 </div>
@@ -143,6 +168,8 @@
         <a href="https://github.com/jacksongomesbr/academia-webdev" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
       </li>
     </ul>
+    
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="iniciando.html" class="mobile-nav-link">Iniciando</a><a href="fundamentos.html" class="mobile-nav-link">Fundamentos</a><a href="formularios.html" class="mobile-nav-link current">Formulários</a>
     
   </div>
   <div id="mobile-lang-select-wrap">

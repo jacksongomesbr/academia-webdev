@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>HTML DOM | Academia Webdev</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-intro.html">
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/academia-webdev/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/academia-webdev/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/academia-webdev/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/academia-webdev/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/academia-webdev/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/academia-webdev/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/academia-webdev/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/academia-webdev/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/academia-webdev/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/academia-webdev/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/academia-webdev/css/navy.css" type="text/css">
+  <!-- endbuild -->
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- RSS -->
+  <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia Webdev" type="application/atom+xml">
+  <!-- Open Graph -->
+  <meta name="description" content="O DOM (Document Object Model) é um padrão da W3C especificado na forma de uma interface para manipulação de documentos cujo conteúdo é representado por objetos. O HTML DOM é uma interface voltada para">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HTML DOM">
+<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-intro.html">
+<meta property="og:site_name" content="Academia Webdev">
+<meta property="og:description" content="O DOM (Document Object Model) é um padrão da W3C especificado na forma de uma interface para manipulação de documentos cujo conteúdo é representado por objetos. O HTML DOM é uma interface voltada para">
+<meta property="og:image" content="http://www.w3schools.com/js/pic_htmltree.gif">
+<meta property="og:updated_time" content="2015-09-02T18:46:52.381Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML DOM">
+<meta name="twitter:description" content="O DOM (Document Object Model) é um padrão da W3C especificado na forma de uma interface para manipulação de documentos cujo conteúdo é representado por objetos. O HTML DOM é uma interface voltada para">
+<meta name="twitter:site" content="jacksongomes">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Swiftype -->
+  <meta class="swiftype" name="title" data-type="string" content="HTML DOM">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body class="">
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <ul>
+        <li class="main-nav-item"><a href="/academia-webdev/fundamentos/" class="main-nav-link">Fundamentos</a></li><li class="main-nav-item"><a href="/academia-webdev/news/" class="main-nav-link">News</a></li><li class="main-nav-item"><a href="/academia-webdev/angularjs/" class="main-nav-link">AngularJS</a></li><li class="main-nav-item"><a href="/academia-webdev/bootstrap/" class="main-nav-link">Bootstrap</a></li>
+        <li class="main-nav-item">
+          <a href="https://github.com/jacksongomesbr/academia-webdev" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="search-btn-wrap" class="main-nav-item">
+      <a id="search-btn" class="main-nav-link st-search-launcher"><i class="fa fa-search"></i></a>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+    <a id="mobile-search-btn" class="st-search-launcher"></a>
+  </div>
+</header>
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">HTML DOM</h1>
+                <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/fundamentos/htmldom-intro.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
+                <p>O DOM (Document Object Model) é um padrão da W3C especificado na forma de uma interface para manipulação de documentos cujo conteúdo é representado por objetos. O HTML DOM é uma interface voltada para manipulação de documentos HTML.</p>
+<p>A figura a seguir apresenta uma árvore DOM.</p>
+<p><img src="http://www.w3schools.com/js/pic_htmltree.gif" alt=""></p>
+<p>A árvore DOM é uma representação de um documento na forma de árvore, representando relações entre elementos (ou objetos). Na árvore de exemplo acima, o nó raiz “Document” tem como filho o nó “html” (que é raiz do documento HTML) que, por sua vez, possui dois filhos: os nós “head” e “body”.</p>
+<p>Os nós podem ser de quatro tipos:</p>
+<ul>
+<li><code>Document</code></li>
+<li><code>Element</code></li>
+<li><code>Atributte</code></li>
+<li><code>Text</code></li>
+</ul>
+<p>Destes tipos, apenas o tipo <strong>Documento</strong> pode ter apenas uma instância na árvore DOM.</p>
+<p>Ao representar o documento HTML na forma de objetos, também são representadas outras características além da relação entre elementos, como propriedades, métodos e eventos.</p>
+<h2 id="Manipulação_da_árvore_DOM" class="article-heading">Manipulação da árvore DOM<a class="article-anchor" href="#Manipulação_da_árvore_DOM" aria-hidden="true"></a></h2><p>Por meio da interface de programação do DOM é possível manipular o documento, o que quer dizer que você pode, usando JavaScript, por exemplo, criar nós, mover nós, adicionar ou modificar propriedades etc.</p>
+<p>O exemplo a seguir demonstra o funcionamento básico do DOM.</p>
+<iframe src="http://embed.plnkr.co/A8JOWp4A85IzNE4NBzNW/preview" width="100%" height="400"></iframe>
+
+<p>No exemplo, o trecho de código a seguir merece destaque:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"conteudo"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="coffeescript"></span><br><span class="line"><span class="reserved">var</span> conteudo = <span class="built_in">document</span>.getElementById(<span class="string">"conteudo"</span>);</span><br><span class="line">conteudo.innerHTML = <span class="string">"Hello World!"</span>;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>O elemento <code>div</code> possui <code>id</code> “conteudo”. O atributo <code>id</code> representa uma das maneiras de se acessar o elemento por meio de uma consulta à árvore DOM.</p>
+<p>No código JavaScript, o objeto <code>document</code>, que representa o nó raiz da árvore DOM, fornece o método <code>getElementById()</code>, que consulta a árvore DOM, em busca de um nó que tenha como identificador o fornecido por parâmetro. </p>
+<p>O nó do tipo <code>Element</code> possui a propriedade <code>innerHTML</code>, que dá acesso ao conteúdo do nó. Este conteúdo é, na verdade, HTML.</p>
+<blockquote class="note info"><strong class="note-title">Exercício</strong><p>Modifique o código para que o conteúdo HTML do elemento <code>div</code> apresente um texto como uma página de uma notícia, com título, resumo, imagem e texto.</p>
+</blockquote> 
+<h2 id="Métodos_para_encontrar_elementos" class="article-heading">Métodos para encontrar elementos<a class="article-anchor" href="#Métodos_para_encontrar_elementos" aria-hidden="true"></a></h2><p>Além do método <code>getElementById()</code> o objeto <code>document</code> fornece os seguintes métodos:</p>
+<ul>
+<li><code>getElementsByTagName(tag)</code>: retorna um array de elementos, cujas tags na árvore DOM sejam conforme o nome da tag informada como parâmetro;</li>
+<li><code>getElementsByClassName(classe)</code>: retorna um array de elementos cujas classes (atributo <code>class</code>) contenham a classe informada como parâmetro;</li>
+<li><code>querySelectorAll(seletor)</code>: retorna um array de elementos com base no seletor. Um seletor utiliza a sintaxe de seletores do CSS.</li>
+</ul>
+<h2 id="Modificando_elementos" class="article-heading">Modificando elementos<a class="article-anchor" href="#Modificando_elementos" aria-hidden="true"></a></h2><p>Além da propriedade <code>innerHTML</code> o objeto <code>Element</code> possui:</p>
+<ul>
+<li><code>setAttribute(atributo, valor)</code>: modifica o valor de um atributo;</li>
+<li><code>removeChild(elemento)</code>: remove um elemento filho</li>
+<li><code>appendChild(elemento)</code>: adiciona um elemento filho</li>
+</ul>
+<p>Para criar elementos, o objeto <code>document</code> fornece o método <code>createElement(tag)</code>, que cria um novo elemento, para ser adicionado à árvore DOM.</p>
+<p>O exemplo a seguir apresenta uma situação em que vários métodos do DOM são chamados para manipular o documento.</p>
+<iframe src="http://embed.plnkr.co/X37GpqvFnKFvzaU85z9U/preview" width="100%" height="400"></iframe>
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2015-09-02T18:46:52.381Z" itemprop="dateModified">Última atualização: 2015-09-02</time>
+                <a href="javascript-objetos.html" class="article-footer-prev" title="Objetos"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="htmldom-eventos.html" class="article-footer-next" title="Eventos"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'academiawebdev';
+  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/fundamentos/htmldom-intro.html';
+  var disqus_title = "HTML DOM";
+  var disqus_config = function(){
+    this.language = 'pt_BR';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Manipulação_da_árvore_DOM"><span class="toc-text">Manipulação da árvore DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Métodos_para_encontrar_elementos"><span class="toc-text">Métodos para encontrar elementos</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Modificando_elementos"><span class="toc-text">Modificando elementos</span></a></li></ol>
+              <a href="#" id="article-toc-top">Voltar para o topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="sidebar-link">Comunicação e serviços</a><strong class="sidebar-title">Conceitos básicos</strong><a href="html.html" class="sidebar-link">HTML</a><a href="css.html" class="sidebar-link">CSS</a><a href="javascript.html" class="sidebar-link">Javascript</a><strong class="sidebar-title">Javascript</strong><a href="javascript-sintaxe.html" class="sidebar-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="sidebar-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="sidebar-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="sidebar-link">Laços de repetição</a><a href="javascript-funcoes.html" class="sidebar-link">Funções</a><a href="javascript-objetos.html" class="sidebar-link">Objetos</a><strong class="sidebar-title">HTML DOM</strong><a href="htmldom-intro.html" class="sidebar-link current">Visão geral</a><a href="htmldom-eventos.html" class="sidebar-link">Eventos</a><a href="htmldom-forms.html" class="sidebar-link">Formulários</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2015 <a href="http://jacksongomesbr.github.com/" target="_blank">Jackson Gomes</a><br>
+      Licenciado sob <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/jacksongomes" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/jacksongomesbr/academia-webdev" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="/academia-webdev/fundamentos/" class="mobile-nav-link">Fundamentos</a></li><li class="mobile-nav-item"><a href="/academia-webdev/news/" class="mobile-nav-link">News</a></li><li class="mobile-nav-item"><a href="/academia-webdev/angularjs/" class="mobile-nav-link">AngularJS</a></li><li class="mobile-nav-item"><a href="/academia-webdev/bootstrap/" class="mobile-nav-link">Bootstrap</a></li>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/jacksongomesbr/academia-webdev" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="comunicacao-e-servicos.html" class="mobile-nav-link">Comunicação e serviços</a><strong class="mobile-nav-title">Conceitos básicos</strong><a href="html.html" class="mobile-nav-link">HTML</a><a href="css.html" class="mobile-nav-link">CSS</a><a href="javascript.html" class="mobile-nav-link">Javascript</a><strong class="mobile-nav-title">Javascript</strong><a href="javascript-sintaxe.html" class="mobile-nav-link">Sintaxe</a><a href="javascript-tipos-de-dados.html" class="mobile-nav-link">Tipos de Dados</a><a href="javascript-condicionais.html" class="mobile-nav-link">Condicionais</a><a href="javascript-lacos-de-repeticao.html" class="mobile-nav-link">Laços de repetição</a><a href="javascript-funcoes.html" class="mobile-nav-link">Funções</a><a href="javascript-objetos.html" class="mobile-nav-link">Objetos</a><strong class="mobile-nav-title">HTML DOM</strong><a href="htmldom-intro.html" class="mobile-nav-link current">Visão geral</a><a href="htmldom-eventos.html" class="mobile-nav-link">Eventos</a><a href="htmldom-forms.html" class="mobile-nav-link">Formulários</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en">English</option>
+      
+        <option value="pt-br" selected>Português</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/academia-webdev/js/lang_select.js" type="text/javascript"></script>
+<script src="/academia-webdev/js/toc.js" type="text/javascript"></script>
+<script src="/academia-webdev/js/mobile_nav.js" type="text/javascript"></script>
+<!-- endbuild -->
+<script src="//cdn.jsdelivr.net/retinajs/1.1.0/retina.min.js" async></script>
+
+<!-- Swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+
+  _st('install','EwN4HMy_KMxTK_GMjV1z');
+</script>
+</body>
+</html>
