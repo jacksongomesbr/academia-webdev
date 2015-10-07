@@ -38,7 +38,7 @@
 <meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/angularjs/index.html">
 <meta property="og:site_name" content="Academia Webdev">
 <meta property="og:description" content="ReferênciasO material desta seção é construído com base na documentação oficial do AngularJS (https://docs.angularjs.org/guide/introduction), no tutorial oficial do AngularJS (https://docs.angularjs.o">
-<meta property="og:updated_time" content="2015-09-03T12:52:00.217Z">
+<meta property="og:updated_time" content="2015-10-07T13:36:58.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Visão Geral">
 <meta name="twitter:description" content="ReferênciasO material desta seção é construído com base na documentação oficial do AngularJS (https://docs.angularjs.org/guide/introduction), no tutorial oficial do AngularJS (https://docs.angularjs.o">
@@ -166,12 +166,15 @@
 <h2 id="Primeiro_exemplo" class="article-heading">Primeiro exemplo<a class="article-anchor" href="#Primeiro_exemplo" aria-hidden="true"></a></h2><p>O exemplo a seguir ilustra alguns dos conceitos, que serão destacados posteriormente.</p>
 <iframe src="http://embed.plnkr.co/Q2DapCZkodDahG1k21AT/preview" width="100%" height="300"></iframe>
 
-<p>A diretiva <code>ng-app</code> indica o contexto de mais alto nível de uma aplicação web.</p>
+<h2 id="Conceitos_iniciais" class="article-heading">Conceitos iniciais<a class="article-anchor" href="#Conceitos_iniciais" aria-hidden="true"></a></h2><p>A diretiva mais importante de um aplicativo angular é a <code>ng-app</code>. Ela deve estar presente no HTML, no elemento de mais alto nível, que conterá os demais elementos do aplicativo. Diretivas são aplicadas no HTML de diversas formas. No primeiro exemplo, a diretiva <code>ng-app</code> foi aplicada a um elemento <code>div</code>, na linha 9, como um atributo. Se preferir utilizar um elemento de mais alto nível ainda, pode aplicar a diretiva <code>ng-app</code> no elemento <code>html</code>. </p>
+<p>A diretiva <code>ng-init</code>, no elemento <code>div</code> da linha 9, permite utilizar código para inicializar elementos do model. Neste caso, dois elementos do model, chamados <code>quantidade</code> e <code>custo</code>, são inicializados com valores <code>1</code> e <code>2</code>, respectivamente. O conteúdo da diretiva, neste caso, é código JavaScript de atribuição de valores a variáveis.</p>
+<p>Nas linhas 12 e 15, respectivamente, estão as diretivas <code>ng-model</code> que indicam para o Angular que os campos de texto estão vinculados a elementos do model. O valor da diretiva é o nome do model ao qual está associado o elemento <code>input</code>. O processo de vinculação de dados (<em>data binding</em>) é um dos elementos-chave do Angular. Por meio deste recurso, qualquer atualização no model será automaticamente visualizada pelo usuário e qualquer atualização no <code>input</code> gerá uma atualização do model (isso é chamado de <em>two-way data binding</em>).</p>
+<p>Na linha 18 há uma expressão baseada no model e um filtro. Expressões estão presentes entre chaves duplas. Neste caso, a primeira parte da expressão (<code>quantidade * custo</code>) corresponde à multiplicação entre dois elementos do model: <code>quantidade</code> e <code>custo</code>. Posteriormente, após o símbolo <code>|</code> está o filtro <code>currency</code>. Filtros formatam valores. Neste caso, o filtro <code>currency</code> formata um valor para apresentação em formato de moeda.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-09-03T12:52:00.217Z" itemprop="dateModified">Última atualização: 2015-09-03</time>
-                
+                <time class="article-footer-updated" datetime="2015-10-07T13:36:58.314Z" itemprop="dateModified">Última atualização: 2015-10-07</time>
+                <a href="iniciando.html" class="article-footer-next" title="Iniciando"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
 <section id="comments">
@@ -196,14 +199,14 @@
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">Conteúdo</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#O_que_é_o_Angular?"><span class="toc-text">O que é o Angular?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Primeiro_exemplo"><span class="toc-text">Primeiro exemplo</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#O_que_é_o_Angular?"><span class="toc-text">O que é o Angular?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Primeiro_exemplo"><span class="toc-text">Primeiro exemplo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conceitos_iniciais"><span class="toc-text">Conceitos iniciais</span></a></li></ol>
               <a href="#" id="article-toc-top">Voltar para o topo</a>
             </div>
           </aside>
         </div>
       </article>
       <aside id="sidebar" role="navigation">
-  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link current">Visão geral</a></div>
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link current">Visão geral</a><a href="iniciando.html" class="sidebar-link">Iniciando</a><a href="ng-repeat.html" class="sidebar-link">Diretiva ng-repeat</a><a href="ng-click.html" class="sidebar-link">Diretiva ng-click</a><a href="model-complexo.html" class="sidebar-link">Model complexo</a></div>
 </aside>
     </div>
   </div>
@@ -231,7 +234,7 @@
       </li>
     </ul>
     
-      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link current">Visão geral</a>
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link current">Visão geral</a><a href="iniciando.html" class="mobile-nav-link">Iniciando</a><a href="ng-repeat.html" class="mobile-nav-link">Diretiva ng-repeat</a><a href="ng-click.html" class="mobile-nav-link">Diretiva ng-click</a><a href="model-complexo.html" class="mobile-nav-link">Model complexo</a>
     
   </div>
   <div id="mobile-lang-select-wrap">

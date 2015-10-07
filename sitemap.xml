@@ -2,6 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/model-complexo.html</loc>
+    <lastmod>2015-10-07T21:52:49.817Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-click.html</loc>
+    <lastmod>2015-10-07T21:12:17.181Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-repeat.html</loc>
+    <lastmod>2015-10-07T18:46:58.747Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/iniciando.html</loc>
+    <lastmod>2015-10-07T14:20:06.030Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/index.html</loc>
+    <lastmod>2015-10-07T13:36:58.314Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jacksongomesbr.github.com/academia-webdev/bootstrap/iniciando.html</loc>
     <lastmod>2015-09-30T21:46:47.209Z</lastmod>
   </url>
@@ -19,11 +44,6 @@
   <url>
     <loc>https://jacksongomesbr.github.com/academia-webdev/bootstrap/index.html</loc>
     <lastmod>2015-09-30T20:22:22.714Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/index.html</loc>
-    <lastmod>2015-09-03T12:52:00.217Z</lastmod>
   </url>
   
   <url>
