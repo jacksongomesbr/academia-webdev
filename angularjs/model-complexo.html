@@ -32,16 +32,17 @@
   <!-- RSS -->
   <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia Webdev" type="application/atom+xml">
   <!-- Open Graph -->
-  <meta name="description" content="Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta página.">
+  <meta name="description" content="Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta seção. Prim">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Model complexo">
 <meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/angularjs/model-complexo.html">
 <meta property="og:site_name" content="Academia Webdev">
-<meta property="og:description" content="Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta página.">
-<meta property="og:updated_time" content="2015-10-07T21:52:49.817Z">
+<meta property="og:description" content="Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta seção. Prim">
+<meta property="og:image" content="http://yuml.me/32cb4654">
+<meta property="og:updated_time" content="2015-10-14T19:58:56.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Model complexo">
-<meta name="twitter:description" content="Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta página.">
+<meta name="twitter:description" content="Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta seção. Prim">
 <meta name="twitter:site" content="jacksongomes">
 <meta property="fb:admins" content="100000247608790">
   <!-- Swiftype -->
@@ -97,14 +98,26 @@
                 <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/angularjs/model-complexo.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
-                <p>Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta página.</p>
+                <p>Os exemplos apresentados até o momento lidaram com estruturas mais básicas para o model. O Angular também permite trabalhar com model com uma estrutura mais complexa, como será visto nesta seção. Primeiro, utilize o aplicativo a seguir.</p>
 <iframe src="http://embed.plnkr.co/elrnz2OTGP0zrXruwIbp/preview" width="100%" height="600"></iframe>
 
+<p>Há duas entidades no modelo de dados: <code>Cidade</code> e <code>Estado</code>. A figura a seguir apresenta um diagrama de classes UML.</p>
+<p><img src="http://yuml.me/32cb4654" alt="Diagrama UML das classes Cidade e Estado"></p>
+<p>A classe <code>Estado</code> possui <code>uf</code> e <code>nome</code>, enquanto a classe <code>Cidade</code> possui <code>estado</code> e <code>nome</code>. Assim, há um relacionamento entre as duas entidades. Estas entidades estão definidas no arquivo <code>app.js</code>, entre as linhas 3 e 11.</p>
+<p>Ainda no arquivo <code>app.js</code>, entre as linhas 25 e 29 é definido um vetor de estados (<code>$scope.estados</code>). Já entre as linhas 31 e 38, um vetor de cidades (<code>$scope.cidades</code>). A função <code>salvar()</code>, linha 40, acrescenta uma cidade no vetor.</p>
+<p>No arquivo <code>index.html</code>, no front-end, há duas seções principais: a primeira apresenta a lista de cidades, com opção de filtro; a segunda contém o formulário de cadastro da cidade. Para a lista de cidades, entre as linhas 42 e 46 são criadas as linhas da tabela que apresenta a lista. Importante notar que, na linha 44, há o código <code>&lt;td&gt;&#123;&#123;cidade.estado.nome}}&lt;/td&gt;</code>. Perceba que está sendo utilizado <code>cidade.estado.nome</code> ou seja, o nome do estado da cidade. </p>
+<p>Para o cadastro da cidade, os elementos do fomrulário estão vinculados ao model da seguinte forma:</p>
+<ul>
+<li>o <code>input</code> representa o nome da cidade e está vinculado a <code>cidade.nome</code> (linha 57);</li>
+<li>o <code>select</code> representa o Estado e está vinculado a <code>cidade.estado.uf</code> (linha 61).</li>
+</ul>
+<p>Perceba que, no último caso, as opções do select são formadas pelo uso da diretiva <code>ng-repeat</code> (linha 62).</p>
+<p>Importante notar que a vinculação dos elementos do formulário funcionam de maneira a simplificar a utilização do model, uma vez que é possível utilizar algo como <code>cidade.estado.uf</code> para indicar que o item selecionado indica a UF do Estado para a cidade que está sendo cadastrada.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-10-07T21:52:49.817Z" itemprop="dateModified">Última atualização: 2015-10-07</time>
-                <a href="ng-click.html" class="article-footer-prev" title="Diretiva ng-click"><i class="fa fa-chevron-left"></i><span>Anterior</span></a>
+                <time class="article-footer-updated" datetime="2015-10-14T19:58:56.474Z" itemprop="dateModified">Última atualização: 2015-10-14</time>
+                <a href="ng-show-hide.html" class="article-footer-prev" title="Diretivas ng-show e ng-hide"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="form-validacao.html" class="article-footer-next" title="Validação de formulários"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
 <section id="comments">
@@ -136,7 +149,7 @@
         </div>
       </article>
       <aside id="sidebar" role="navigation">
-  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="iniciando.html" class="sidebar-link">Iniciando</a><a href="ng-repeat.html" class="sidebar-link">Diretiva ng-repeat</a><a href="ng-click.html" class="sidebar-link">Diretiva ng-click</a><a href="model-complexo.html" class="sidebar-link current">Model complexo</a></div>
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="iniciando.html" class="sidebar-link">Iniciando</a><a href="ng-repeat.html" class="sidebar-link">Diretiva ng-repeat</a><a href="ng-click.html" class="sidebar-link">Diretiva ng-click</a><a href="ng-show-hide.html" class="sidebar-link">Diretivas ng-show e ng-hide</a><a href="model-complexo.html" class="sidebar-link current">Model complexo</a><a href="form-validacao.html" class="sidebar-link">Validação de formulários</a></div>
 </aside>
     </div>
   </div>
@@ -164,7 +177,7 @@
       </li>
     </ul>
     
-      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="iniciando.html" class="mobile-nav-link">Iniciando</a><a href="ng-repeat.html" class="mobile-nav-link">Diretiva ng-repeat</a><a href="ng-click.html" class="mobile-nav-link">Diretiva ng-click</a><a href="model-complexo.html" class="mobile-nav-link current">Model complexo</a>
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="iniciando.html" class="mobile-nav-link">Iniciando</a><a href="ng-repeat.html" class="mobile-nav-link">Diretiva ng-repeat</a><a href="ng-click.html" class="mobile-nav-link">Diretiva ng-click</a><a href="ng-show-hide.html" class="mobile-nav-link">Diretivas ng-show e ng-hide</a><a href="model-complexo.html" class="mobile-nav-link current">Model complexo</a><a href="form-validacao.html" class="mobile-nav-link">Validação de formulários</a>
     
   </div>
   <div id="mobile-lang-select-wrap">

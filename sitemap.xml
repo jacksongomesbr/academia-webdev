@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/model-complexo.html</loc>
-    <lastmod>2015-10-07T21:52:49.817Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-click.html</loc>
-    <lastmod>2015-10-07T21:12:17.181Z</lastmod>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/form-validacao.html</loc>
+    <lastmod>2015-10-14T21:50:48.295Z</lastmod>
   </url>
   
   <url>
     <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-repeat.html</loc>
-    <lastmod>2015-10-07T18:46:58.747Z</lastmod>
+    <lastmod>2015-10-14T20:25:05.783Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-click.html</loc>
+    <lastmod>2015-10-14T20:25:01.858Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-show-hide.html</loc>
+    <lastmod>2015-10-14T20:24:25.360Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacksongomesbr.github.com/academia-webdev/angularjs/model-complexo.html</loc>
+    <lastmod>2015-10-14T19:58:56.474Z</lastmod>
   </url>
   
   <url>

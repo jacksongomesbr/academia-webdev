@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Diretiva ng-click | Academia Webdev</title>
+  <title>Validação de formulários | Academia Webdev</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-click.html">
+  <link rel="canonical" href="https://jacksongomesbr.github.com/academia-webdev/angularjs/form-validacao.html">
   <!-- Icon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/academia-webdev/icon/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/academia-webdev/icon/apple-touch-icon-114x114.png">
@@ -32,20 +32,20 @@
   <!-- RSS -->
   <link rel="alternative" href="/academia-webdev/atom.xml" title="Academia Webdev" type="application/atom+xml">
   <!-- Open Graph -->
-  <meta name="description" content="A diretiva ng-click é utilizada para representar um comportamento de clique do mouse em um elemento, por exemplo um botão. O conteúdo da diretiva (o atributo) é um código JavaScript. O exemplo a segui">
+  <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Diretiva ng-click">
-<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-click.html">
+<meta property="og:title" content="Validação de formulários">
+<meta property="og:url" content="https://jacksongomesbr.github.com/academia-webdev/angularjs/form-validacao.html">
 <meta property="og:site_name" content="Academia Webdev">
-<meta property="og:description" content="A diretiva ng-click é utilizada para representar um comportamento de clique do mouse em um elemento, por exemplo um botão. O conteúdo da diretiva (o atributo) é um código JavaScript. O exemplo a segui">
-<meta property="og:updated_time" content="2015-10-14T20:25:01.858Z">
+<meta property="og:description">
+<meta property="og:updated_time" content="2015-10-14T21:50:48.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Diretiva ng-click">
-<meta name="twitter:description" content="A diretiva ng-click é utilizada para representar um comportamento de clique do mouse em um elemento, por exemplo um botão. O conteúdo da diretiva (o atributo) é um código JavaScript. O exemplo a segui">
+<meta name="twitter:title" content="Validação de formulários">
+<meta name="twitter:description">
 <meta name="twitter:site" content="jacksongomes">
 <meta property="fb:admins" content="100000247608790">
   <!-- Swiftype -->
-  <meta class="swiftype" name="title" data-type="string" content="Diretiva ng-click">
+  <meta class="swiftype" name="title" data-type="string" content="Validação de formulários">
   <!-- Google Analytics -->
   
 <script>
@@ -93,21 +93,16 @@
           <div class="article">
             <div class="inner">
               <header class="article-header">
-                <h1 class="article-title" itemprop="name">Diretiva ng-click</h1>
-                <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/angularjs/ng-click.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
+                <h1 class="article-title" itemprop="name">Validação de formulários</h1>
+                <a href="https://github.com/jacksongomesbr/academia-webdev/edit/master/source/angularjs/form-validacao.md" class="article-edit-link" title="Melhorar esta documentação"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody" data-swiftype-index="true">
-                <p>A diretiva <code>ng-click</code> é utilizada para representar um comportamento de clique do mouse em um elemento, por exemplo um botão. O conteúdo da diretiva (o atributo) é um código JavaScript. O exemplo a seguir demonstra a utilização desta diretiva.</p>
-<iframe src="http://embed.plnkr.co/b3R5JbdIintYmk8HUkcx/preview" width="100%" height="300"></iframe>
+                <iframe src="http://embed.plnkr.co/DoYAoRRH1eq3QpwXwu3F/preview" width="100%" height="600"></iframe>
 
-<p>No controller, no arquivo <code>app.js</code>, na linha 6 é definida a função <code>salvar()</code>, que aceita como parâmetro o nome da cidade a ser inserida no vetor <code>cidades</code>.</p>
-<p>Na view, no arquivo <code>index.html</code>, na linha 42 está presente o elemento <code>button</code> e nele é aplicada a diretiva <code>ng-click</code>. Neste caso, a diretiva indica que será chamada a função <code>salvar()</code> passando como parâmetro o model <code>nova_cidade</code> (vinculado ao <code>input</code> da linha 40) e, posteriormente, o valor do model será uma string vazia.</p>
-<blockquote class="note info"><strong class="note-title">Exercício</strong><p>O exemplo anterior implementa parte das funcionalidades de um CRUD. Neste caso, está implementando a consulta (listagem dos dados) e o cadastro. Implemente a funcionalidade de excluir uma cidade.</p>
-</blockquote>
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-10-14T20:25:01.858Z" itemprop="dateModified">Última atualização: 2015-10-14</time>
-                <a href="ng-repeat.html" class="article-footer-prev" title="Diretiva ng-repeat"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="ng-show-hide.html" class="article-footer-next" title="Diretivas ng-show e ng-hide"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+                <time class="article-footer-updated" datetime="2015-10-14T21:50:48.295Z" itemprop="dateModified">Última atualização: 2015-10-14</time>
+                <a href="model-complexo.html" class="article-footer-prev" title="Model complexo"><i class="fa fa-chevron-left"></i><span>Anterior</span></a>
               </footer>
               
 <section id="comments">
@@ -115,8 +110,8 @@
 </section>
 <script>
   var disqus_shortname = 'academiawebdev';
-  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/angularjs/ng-click.html';
-  var disqus_title = "Diretiva ng-click";
+  var disqus_url = 'https://jacksongomesbr.github.com/academia-webdev/angularjs/form-validacao.html';
+  var disqus_title = "Validação de formulários";
   var disqus_config = function(){
     this.language = 'pt_BR';
   };
@@ -139,7 +134,7 @@
         </div>
       </article>
       <aside id="sidebar" role="navigation">
-  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="iniciando.html" class="sidebar-link">Iniciando</a><a href="ng-repeat.html" class="sidebar-link">Diretiva ng-repeat</a><a href="ng-click.html" class="sidebar-link current">Diretiva ng-click</a><a href="ng-show-hide.html" class="sidebar-link">Diretivas ng-show e ng-hide</a><a href="model-complexo.html" class="sidebar-link">Model complexo</a><a href="form-validacao.html" class="sidebar-link">Validação de formulários</a></div>
+  <div class="inner"><strong class="sidebar-title">Iniciando</strong><a href="index.html" class="sidebar-link">Visão geral</a><a href="iniciando.html" class="sidebar-link">Iniciando</a><a href="ng-repeat.html" class="sidebar-link">Diretiva ng-repeat</a><a href="ng-click.html" class="sidebar-link">Diretiva ng-click</a><a href="ng-show-hide.html" class="sidebar-link">Diretivas ng-show e ng-hide</a><a href="model-complexo.html" class="sidebar-link">Model complexo</a><a href="form-validacao.html" class="sidebar-link current">Validação de formulários</a></div>
 </aside>
     </div>
   </div>
@@ -167,7 +162,7 @@
       </li>
     </ul>
     
-      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="iniciando.html" class="mobile-nav-link">Iniciando</a><a href="ng-repeat.html" class="mobile-nav-link">Diretiva ng-repeat</a><a href="ng-click.html" class="mobile-nav-link current">Diretiva ng-click</a><a href="ng-show-hide.html" class="mobile-nav-link">Diretivas ng-show e ng-hide</a><a href="model-complexo.html" class="mobile-nav-link">Model complexo</a><a href="form-validacao.html" class="mobile-nav-link">Validação de formulários</a>
+      <strong class="mobile-nav-title">Iniciando</strong><a href="index.html" class="mobile-nav-link">Visão geral</a><a href="iniciando.html" class="mobile-nav-link">Iniciando</a><a href="ng-repeat.html" class="mobile-nav-link">Diretiva ng-repeat</a><a href="ng-click.html" class="mobile-nav-link">Diretiva ng-click</a><a href="ng-show-hide.html" class="mobile-nav-link">Diretivas ng-show e ng-hide</a><a href="model-complexo.html" class="mobile-nav-link">Model complexo</a><a href="form-validacao.html" class="mobile-nav-link current">Validação de formulários</a>
     
   </div>
   <div id="mobile-lang-select-wrap">
